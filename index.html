@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="mypage" lang="ru">
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link  rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="mypage_body">
 <!--<p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
 -->
-<header>
-  <nav>
-    <ul>
+<header class="main_header">
+  <nav class="main_navigation">
+    <ul class="site_navigation">
       <li>
         <a href="#">Информация </a>
       </li>
@@ -26,108 +29,115 @@
       </li>
     </ul>
 
-    <img alt="Логотип" src="logo-138x70.png">
+    <img class="logo" alt="Логотип" src="logo-138x70.png">
   </nav>
 </header>
-<main>
-  <h1>Сайт городка Седона</h1>
+<main class="container">
+  <h1 class="site_header">Сайт городка Седона</h1>
 
     <img alt="Горы" src="background-1200x509.png">
     <img alt="Приветсвие" src="welcome.svg">
 
-  <section>
-    <h2>Преимущества</h2>
-    <p>
+  <section class="features">
+    <h2 class="features_header">Преимущества</h2>
+    <p class="features_item">
       Седона — небольшой городок в Аризоне,<br> заслуживающий большего!
     </p>
-    <p>
+    <p class="features_content">
       Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
     </p>
   </section>
-  <section>
+  <section class="features_with_pic">
     <img alt="Красивый дом" src="house_800x256.png">
-
-
-    <p>
-      Настоящий городок
-    </p>
-    <p>
-      - N1 -
-    </p>
-    <p>
-      Седона - не аттракцион для туристов, там течёт своя жизнь
-    </p>
+      <p class="features_item">
+        Настоящий городок
+      </p>
+      <p class="features_content">
+        - N1 -
+      </p>
+      <p class="features_content">
+        Седона - не аттракцион для туристов, там течёт своя жизнь
+      </p>
   </section>
-  <section>
+  <section class="features">
 
     <!--<img src="domik.svg">-->
-    <p>
-      Жильё <br> Рекомендуем пожить в настоящем мотеле, всё как в кино!
+    <p class="features_item">
+      Жильё <br>
+    </p>
+    <p class="features_content">
+    Рекомендуем пожить в настоящем мотеле, всё как в кино!
     </p>
     <!--<img src="burger.svg">-->
-    <p>
-      Еда<br> Всегда заказывайте фирменный бургер, вы не разочаруетесь!
+    <p class="features_item">
+      Еда<br>
+    </p>
+    <p class="features_content">
+      Всегда заказывайте фирменный бургер, вы не разочаруетесь!
     </p>
     <!--<img src="podarok.svg">-->
-    <p>
-      Сувениры<br> Не только китайского, но и местного производства!
+    <p class="features_item">
+      Сувениры<br>
+    </p>
+    <p class="features_content">
+      Не только китайского, но и местного производства!
     </p>
   </section>
 
-  <section>
+  <section class="features_with_pic">
     <img alt="Мост дьявола" src="most-800x256.png">
-    <p>
+    <p class="features_item">
       Там есть Мост дьявола
     </p>
-    <p>
+    <p class="features_content">
       — №2 —
     </p>
-    <p>
+    <p class="features_content">
       Да, по нему можно пройти! Если конечно вы осмелитесь
     </p>
   </section>
 
-  <section>
-    <p>
+  <section class="features">
+    <p class="features_item">
       небольшая площадь
     </p>
-    <p>
+    <p class="features_content">
       — №3 —
     </p>
-    <p>
+    <p class="features_content">
       все достопримечательности находятся очень близко
     </p>
-    <p>
+    <p class="features_item">
       красивая дорога
     </p>
-    <p>
+    <p class="features_content">
       - №4 -
     </p>
-    <p>
+    <p class="features_content">
       ехать в седону из лас-вегаса совсем не скучно!
     </p>
-    <p>
+    <p class="features_item">
       мало туристов
     </p>
-    <p>
+    <p class="features_content">
       - №5 -
     </p>
-    <p>
+    <p class="features_content">
       большинство едет в гранд каньон и толпится там
     </p>
   </section>
 
   <section>
-    <h2>
+    <h2 class="hotels_search_header">
       Заинтересовались?
     </h2>
-    <p>
-      Заинтересовались? Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
+    <p class="features_content">
+       Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне
     </p>
   </section>
 
-  <section>
-    <p>Поиск гостиницы в Седоне</p>
+  <section class="hotels_search">
+    <p class="hotel_search_button">Поиск гостиницы в Седоне</p>
     <form method="post" name="Поиск гостиниц">
       Дата заезда:
       Дата выезда:
@@ -138,16 +148,16 @@
     <img alt="Карта" src="map.png">
   </section>
 </main>
-<footer>
-  <p>
+<footer class="page-footer">
+  <p class="hash_link">
     #visitSEDONA
   </p>
-  <a href="tel:+74956660166">ТЕЛ: +7(495) 666-01-66</a>
-  <a href="#"></a> <!--Твиттер-->
-  <a href="#"></a> <!--фейсбук-->
-  <a href="#"></a> <!--Youtube-->
+  <a class="footer-phone" href="tel:+74956660166">ТЕЛ: +7(495) 666-01-66</a>
+  <a class="footer_social_link" href="#"></a> <!--Твиттер-->
+  <a class="footer_social_link" href="#"></a> <!--фейсбук-->
+  <a class="footer_social_link" href="#"></a> <!--Youtube-->
 
-  <p>website by</p>
+  <p class="footer_credits">website by</p>
   <a href="https://htmlacademy.ru/intensive/htmlcss">
     <!--<img src="htmla-logo.png">-->
   </a>
