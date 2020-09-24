@@ -97,6 +97,66 @@ color: black;
   line-height: 24px;
   text-align: center;
 }
+.hotel_search_form_activate {
+  font: inherit;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: none;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: white;
+  background-color: var(--light-brown);
+  position: absolute;
+  width: 568px;
+  height: 86px;
+
+}
+.hotel_search_form_activate:hover {
+  background-color: var(--middle-brown);
+
+}
+.hotel_search_form_activate:active {
+  background-color: var(--dark-brown);
+  color: rgba(255,255,255,0.3);
+}
+
+.hotels_search_button {
+  font: inherit;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: none;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 27px;
+  color: white;
+  background-color: var(--light-blue);
+  position: absolute;
+  width: 458px;
+  height: 58px;
+}
+.hotels_search_button:hover {
+  background-color: var(--middle-blue);
+}
+.hotels_search_button:active {
+    background-color: var(--dark-blue);
+  color: rgba(255,255,255,0.3);
+}
+.footer-phone {
+  color:inherit;
+}
+.footer_credits a {
+text-decoration: none;
+
+}
+.footer_credits:hover {
+
+}
+.footer_credits:active {
+}
+
 
 
 
