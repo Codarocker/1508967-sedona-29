@@ -21,7 +21,6 @@
 }
 
 body {
-  position: absolute;
   min-width: 1200px;
   margin: 0;
   padding: 0;
@@ -59,10 +58,13 @@ img {
 .site_navigation a {
 color: black;
 }
-.site_navigation a:hover,
+.site_navigation a:hover
+{
+  color: var(--light-blue);
+}
 .site_navigation a:focus
 {
-  background-color: white;
+  color: rgba(0,0,0,0.3);
 }
 
 /*Features*/
@@ -141,20 +143,22 @@ color: black;
   background-color: var(--middle-blue);
 }
 .hotels_search_button:active {
-    background-color: var(--dark-blue);
+  background-color: var(--dark-blue);
   color: rgba(255,255,255,0.3);
 }
 .footer-phone {
   color:inherit;
 }
-.footer_credits a {
-text-decoration: none;
+.footer_credits  {
+  color: black;
+  text-decoration: none;
 
 }
 .footer_credits:hover {
-
+  color: var(--light-blue);
 }
 .footer_credits:active {
+  color: rgba(0,0,0,0.3);
 }
 
 
