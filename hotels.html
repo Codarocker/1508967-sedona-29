@@ -3,30 +3,33 @@
 <head>
       <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link  rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header>
-<nav>
-  <ul>
-    <li>
-      <a href="#">Информация </a>
-    </li>
-    <li>
-      <a href="#">Фото и видео</a>
-    </li>
+<header class="main_header">
+  <nav class="main_navigation">
+    <ul class="site_navigation">
+      <li>
+        <a href="#">Информация </a>
+      </li>
+      <li>
+        <a href="#">Фото и видео</a>
+      </li>
 
-    <li>
-      <a href="#">Карта штата</a>
-    </li>
+      <li>
+        <a href="#">Карта штата</a>
+      </li>
 
-    <li>
-      <a href="hotels.html">Гостиницы</a>
-    </li>
-  </ul>
-<a href="index.html">
-  <img alt="Логотип" src="logo-138x70.png">
-</a>
-</nav>
+      <li>
+        <a  class="site_navigation_active" href="hotels.html">Гостиницы</a>
+      </li>
+    </ul>
+    <a href="index.html">
+    <img class="logo" alt="Логотип" src="logo-138x70.png">
+      </a>
+  </nav>
 </header>
 <main>
   <h1>Каталог гостиниц</h1>
@@ -41,11 +44,11 @@
 
   </section>
 
-  <section>
+  <section class="hotel_catalog_sort">
     <h2>Результат поиска</h2>
 <p> Найдено:3
     Сортировка:
-    <a href="#"> по цене</a>
+    <a class="hotel_catalog_sort_active" href="#"> по цене</a>
   <a href="#"> по типу</a>
   <a href="#"> по рейтингу</a>
   <a href="#"> <!-- Сортировка вверх --> </a>
@@ -53,11 +56,11 @@
 </p>
   </section>
 <section>
-  <h2>Список гостиниц</h2>
-  <ul>
+  <h2 class="hotel_catalog_header">Список гостиниц</h2>
+  <ul class="hotel_catalog">
     <li>
       <a href="hotels.html">
-        <h3>amara resort & spa</h3>
+        <h3 class="hotel_catalog_item_header">amara resort & spa</h3>
         </a>
       <a href="hotels.html">
         <img src="amara.png" width="135" height="90" alt="Гостиница amara resort & spa">
@@ -65,14 +68,13 @@
 
       <p>
         Гостиница
-      </p>
-      <p>
+
         от 4000 р.
       </p>
-      <p>
+      <p class="hotel_catalog_item_more_button">
         <a href="#">Подробнее</a>
       </p>
-      <p>
+      <p class="hotel_catalog_item_2book_button">
         <a href="#">Забронировать</a>
       </p>
       <p>Количество звезд у гостиницы: 5</p>
@@ -81,43 +83,41 @@
 
     <li>
       <a href="hotels.html">
-        <h3>desert qualin inn</h3>
+        <h3 class="hotel_catalog_item_header">desert qualin inn</h3>
       </a>
       <a href="hotels.html">
         <img src="qualin.png" width="135" height="90" alt="Мотель desert qualin inn">
       </a>
       <p>
         Мотель
-      </p>
-      <p>
+
         от 3000 р.
       </p>
-      <p>
+      <p class="hotel_catalog_item_more_button">
         <a href="#">Подробнее</a>
       </p>
-      <p>
-        <a href="#">Забронировать</a>
+      <p class="hotel_catalog_item_2book_button">
+        <a  href="#">Забронировать</a>
       </p>
       <p>Количество звезд у гостиницы: 3</p>
       <p>Рейтинг: 8,9</p>
       </li>
 <li>
   <a href="hotels.html">
-    <h3>Villas at Poco Diablon</h3>
+    <h3 class="hotel_catalog_item_header">Villas at Poco Diablon</h3>
   </a>
   <a href="hotels.html">
     <img src="Diablo.png" width="135" height="90" alt="Апартаменты Villas at Poco Diablo">
   </a>
   <p>
     Апартаменты
-  </p>
-  <p>
+
     от 2000 р.
   </p>
-  <p>
+  <p class="hotel_catalog_item_more_button">
     <a href="#">Подробнее</a>
   </p>
-  <p>
+  <p class="hotel_catalog_item_2book_button">
     <a href="#">Забронировать</a>
   </p>
   <p>Количество звезд у гостиницы: 2</p>
@@ -129,18 +129,18 @@
 </section>
 
 </main>
-<footer>
-  <p>
+<footer class="page-footer">
+  <p class="hash_link">
     #visitSEDONA
   </p>
-  <a href="tel:+74956660166">ТЕЛ: +7(495) 666-01-66</a>
-  <a href="#"></a> <!--Твиттер-->
-  <a href="#"></a> <!--фейсбук-->
-  <a href="#"></a> <!--Youtube-->
+  <a class="footer-phone" href="tel:+74956660166">ТЕЛ: +7(495) 666-01-66</a>
+  <a class="footer_social_link" href="#"></a> <!--Твиттер-->
+  <a class="footer_social_link" href="#"></a> <!--фейсбук-->
+  <a class="footer_social_link" href="#"></a> <!--Youtube-->
+
 
   <a class="footer_credits" href="https://htmlacademy.ru/intensive/htmlcss">
-  <p>website by</p>
-
+    <p >website by</p>
     <!--<img src="htmla-logo.png">-->
   </a>
 </footer>

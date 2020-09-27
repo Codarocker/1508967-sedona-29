@@ -37,6 +37,7 @@ body {
 }
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 img {
@@ -66,6 +67,13 @@ color: black;
 {
   color: rgba(0,0,0,0.3);
 }
+.site_navigation .site_navigation_active {
+  color: var(--light-brown);
+}
+.site_navigation .site_navigation_active:active,
+.site_navigation .site_navigation_active:hover {
+  color: var(--light-brown);
+  }
 
 /*Features*/
 
@@ -110,7 +118,6 @@ color: black;
   line-height: 26px;
   color: white;
   background-color: var(--light-brown);
-  position: absolute;
   width: 568px;
   height: 86px;
 
@@ -135,7 +142,6 @@ color: black;
   line-height: 27px;
   color: white;
   background-color: var(--light-blue);
-  position: absolute;
   width: 458px;
   height: 58px;
 }
@@ -146,6 +152,85 @@ color: black;
   background-color: var(--dark-blue);
   color: rgba(255,255,255,0.3);
 }
+
+.hotel_catalog {
+  color: var(--dark-gray-text);
+  font-weight: normal;
+  list-style: none;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.hotel_catalog_sort a {
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(0,0,0,0.3);
+  text-decoration: underline dashed;
+  }
+.hotel_catalog_sort a:hover {
+  color: var(--light-blue);
+  text-decoration: underline dashed;
+}
+
+.hotel_catalog_sort a:active {
+  color: inherit;
+  text-decoration: none;
+}
+.hotel_catalog_sort .hotel_catalog_sort_active {
+  color: var(--light-blue);
+  text-decoration: none;
+}
+.hotel_catalog_item_header {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+}
+.hotel_catalog_item_header:hover {
+  color: var(--light-blue);
+}
+
+.hotel_catalog_item_header:active {
+  color: rgba(0,0,0,0.3);
+}
+
+
+
+
+.hotel_catalog_item_more_button {
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+  background-color: var(--light-blue);
+  width: 110px;
+  height: 27px;
+}
+.hotel_catalog_item_more_button:hover {
+  background-color: var(--middle-blue);
+}
+.hotel_catalog_item_more_button:active {
+  color: rgba(255,255,255,0.3);
+  background-color: var(--dark-blue);
+}
+
+.hotel_catalog_item_2book_button {
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+  background-color: var(--light-brown);
+  width: 142px;
+  height: 27px;
+}
+.hotel_catalog_item_2book_button:hover {
+  background-color: var(--middle-brown);
+}
+.hotel_catalog_item_2book_button:active {
+  color: rgba(255,255,255,0.3);
+  background-color: var(--dark-brown);
+
+}
+
+
+
 .footer-phone {
   color:inherit;
 }
