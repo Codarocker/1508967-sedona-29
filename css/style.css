@@ -63,7 +63,7 @@ img {
   width: 1200px;
   margin: 0 auto;
   grid-template-rows: min-content 1fr min-content;
-    box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
 }
 
 .main_header {
@@ -74,8 +74,6 @@ img {
 
 
 .main-navigation {
-
-  display: grid;
   font-weight: bold;
   font-size: 14px;
   line-height: 26px;
@@ -88,7 +86,7 @@ img {
   padding: 0;
   margin: 0;
   display: grid;
-  grid-template-columns: 73px 127px 1fr 2fr 1fr 127px 73px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   text-align: center;
   /*outline: chartreuse solid 5px;*/
   /*outline-offset: -5px;*/
@@ -96,24 +94,36 @@ img {
 
 
 }
-li:nth-child(2),  li:nth-child(5) {
+li:nth-child(1),  li:nth-child(2) {
   text-align: left;
   padding-top: 14px;
 }
-li:nth-child(3),  li:nth-child(6) {
+li:nth-child(3),  li:nth-child(4) {
   text-align: right;
   padding-top: 14px;
 }
 
-li:nth-child(5) {
-  padding-left: 17px;
+li:nth-child(1) {
+  padding-left: 74px;
+  padding-top: 14px;
+  }
+
+li:nth-child(4) {
+  padding-right: 74px;
   padding-top: 14px;
 }
-li:nth-child(4) {
-  background-image: url("../img/logo-138x70.svg");
-  background-repeat: no-repeat;
-  background-position: top;
-  z-index: 2;
+
+
+.site_header_logo {
+  position: relative;
+  width: 138px;
+  margin: 0 auto;
+  height: 70px;
+  text-align: center;
+  margin-bottom: -70px;
+  z-index: 1;
+
+
 }
 
 
@@ -331,7 +341,7 @@ display: inline-block;
   gap: 0px 0px;
   grid-template-areas:
     "hotel_catalog_pic hotel_name  hotel_name hotel_stars"
-    "hotel_catalog_pic hotel_type hotel_price  ."
+    "hotel_catalog_pic hotel_type hotel_price hotel_price"
     "hotel_catalog_pic hotel_catalog_item_more_button hotel_catalog_item_2book_button hotel_score";
   color: var(--dark-gray-text);
   font-weight: normal;
@@ -347,8 +357,13 @@ display: inline-block;
   display: grid;
   margin: 0  auto;
   padding-top: 20px;
-  grid-template-columns: 164px 116px 79px 82px 108px auto 22px 22px;
+  grid-template-columns: 164px 116px 79px 82px 108px 500px 22px;
 }
+.hotel_catalog_sort_nav_container div:nth-child(6) {
+  text-align: right;
+}
+
+
 .hotel_catalog_sort_nav_container {
   display: block;
   width: 1200px;
@@ -386,6 +401,7 @@ grid-area: hotel_catalog_pic;
 }
 .hotel_price {
   grid-area: hotel_price;
+  text-align: left;
 }
 
 .hotel_score {
