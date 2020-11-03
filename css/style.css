@@ -354,8 +354,7 @@ display: flex;
   margin: 0;
   padding-top: 35px;
   line-height: 24px;
-  outline: fuchsia dotted 2px;
-  outline-offset: -2px;
+
 
 }
 .hotel_search_form {
@@ -394,6 +393,17 @@ display: flex;
   height: 86px;
 
 }
+.arrival_date, .departure_date {
+  position: relative;
+}
+
+.hotel_search_fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+
 .hotel_search_form_activate:hover {
   background-color: var(--middle-brown);
 
@@ -405,9 +415,12 @@ display: flex;
 }
 
 .hotels_search_button {
-  font: inherit;
+  margin: 0;
+  padding: 16px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  display: inline-block;
   text-align: center;
-  vertical-align: middle;
   text-transform: uppercase;
   border: none;
   font-weight: bold;
@@ -415,8 +428,8 @@ display: flex;
   line-height: 27px;
   color: var(--basic-white);
   background-color: var(--light-blue);
-  /*width: 458px;
-  height: 58px;*/
+  width: 100%;
+
 }
 .hotels_search_button:hover {
   background-color: var(--middle-blue);
@@ -424,17 +437,184 @@ display: flex;
 .hotels_search_button:active {
   background-color: var(--dark-blue);
   color: var(--transparent-white);
-}
+  }
+
+
 .hotel_search_form input[name="depature"],input[name="arrival"] {
-  margin: 0 auto;
+  /*margin: 0 auto;*/
   padding: 0;
-  margin-top: 15px;
+  padding-left: 15px;
+  margin-top: 30px;
   margin-left: 15px;
   border: 0;
-  width: 346px;
+  width: 331px;
   height: 38px;
   background-color: var(--light-grey);
+  font: inherit;
+  }
+
+  .arrival_date .calendar_open {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  height: 23px;
+  width: 21px;
+  top: 36px;
+  right: 9px;
+  background-image: url("../img/calendar.svg");
+  background-repeat: no-repeat;
+
 }
+
+.departure_date .calendar_open {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  height: 23px;
+  width: 21px;
+  top: 36px;
+  right: 9px;
+  background-image: url("../img/calendar.svg");
+  background-repeat: no-repeat;
+
+}
+
+
+
+
+
+
+
+.hotel_search_form input[name="arrival"] {
+  margin-left: 19px;
+  }
+
+
+
+.dates {
+  position: relative;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: flex-end;
+}
+
+
+.people_count {
+  position: relative;
+  display: flex;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+.people_count input {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  border: none;
+  height: 38px;
+  width: 114px;
+  background-color: var(--light-grey);
+  font: inherit;
+
+}
+.people_count p {
+  display: inline-block;
+  margin-right: 35px;
+}
+
+.people_count_dec, .people_count_inc  {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  height: 12px;
+  width: 12px;
+  background-color: inherit;
+
+}
+.adult .people_count_dec {
+  left: 125px;
+  top: 20px;
+
+}
+.adult .people_count_inc {
+  left: 201px;
+  top: 20px;
+}
+.child .people_count_dec {
+  left: 357px;
+  top: 20px;
+
+}
+.child .people_count_inc {
+  left: 433px;
+  top: 20px;
+}
+
+.adult .people_count_dec::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 12px;
+  left: 0px;
+  top: 6px;
+  background-color: var(--middle-grey-form);
+}
+.adult .people_count_inc::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 12px;
+  left: 0px;
+  top: 6px;
+  background-color: var(--middle-grey-form);
+}
+.adult .people_count_inc::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 12px;
+  left: 0px;
+  top: 6px;
+  transform: rotate(90deg);
+  background-color: var(--middle-grey-form);
+}
+
+.child .people_count_dec::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 12px;
+  left: 0px;
+  top: 6px;
+  background-color: var(--middle-grey-form);
+}
+.child .people_count_inc::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 12px;
+  left: 0px;
+  top: 6px;
+  background-color: var(--middle-grey-form);
+}
+.child .people_count_inc::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 12px;
+  left: 0px;
+  top: 6px;
+  transform: rotate(90deg);
+  background-color: var(--middle-grey-form);
+}
+
 
 
 

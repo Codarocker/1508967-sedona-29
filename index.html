@@ -164,22 +164,46 @@
     <button class="hotel_search_form_activate" type="button">
     Поиск гостиницы в Седоне
     </button>
+
     <div class="hotel_search_form">
-     <form method="post" name="Поиск гостиниц">
-      <p>Дата заезда:
-      <input name="arrival" class="arrival_date" type="date" value="2017-04-24">
-      </p>
-      <p>Дата выезда:
-      <input name="depature" class="departure_date" type="date" value="2017-07-04">
-      </p>
-       <p>Взрослые:
-       <input type="number" value="2">
+     <form method="get" name="Поиск гостиниц">
+       <fieldset class="hotel_search_fieldset" name="hotel_search">
+        <legend></legend>
+         <div class="dates">
+
+       <label class="arrival_date"> Дата заезда:
+         <input name="arrival"  type="text" value="24 апреля 2017">
+         <button class="calendar_open" type="button" aria-label="Открыть календарь"></button>
+       </label>
+
+           <label class="departure_date">
+      Дата выезда:
+      <input name="depature"  type="text" value="4 июля 2017">
+             <button class="calendar_open" type="button" aria-label="Открыть календарь"></button>
+           </label>
+
+         </div>
+
+         <div class="people_count">
+        <label class="adult">
+          <p>
+       Взрослые:
+          </p>
+          <button class="people_count_dec" type="button" aria-label="Уменьшить количество"></button>
+       <input type="text" value="2">
+          <button class="people_count_inc" type="button" aria-label="Увеличить количество"></button>
+        </label>
+           <label class="child">
+             <p>
          Дети:
-        <input type="number" value="0">
-        </p>
-
+             </p>
+             <button class="people_count_dec" type="button" aria-label="Уменьшить количество"></button>
+        <input type="text" value="0">
+             <button class="people_count_inc" type="button" aria-label="Увеличить количество"></button>
+           </label>
+         </div>
       <input class="hotels_search_button" type="submit" value="Найти">
-
+       </fieldset>
     </form>
     </div>
     <img alt="Карта" src="img/map.png" width="1200" height="593">
