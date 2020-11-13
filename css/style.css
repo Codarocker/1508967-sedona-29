@@ -190,7 +190,7 @@ color: var(--basic-black);
 .hotels_background {
   position: relative;
   display: block;
-  background-image: url("../img/hotels_bg_1200x217.jpg");
+  background-image: url("../img/hotels-bg-1200x217.jpg");
   background-repeat: no-repeat;
   text-align: center;
   vertical-align: center;
@@ -1312,6 +1312,7 @@ grid-area: hotel_catalog_pic;
 .footer-telnumber {
   display: inline-block;
   padding-top: 10px;
+  vertical-align: middle;
 }
 
 .footer_credits  {
